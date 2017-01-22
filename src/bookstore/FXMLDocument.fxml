@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<AnchorPane id="AnchorPane" prefHeight="570" prefWidth="700" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bookstore.FXMLDocumentController">
+    <children>
+      <TableView fx:id="tableView" layoutX="10.0" layoutY="10.0" prefHeight="550.0" prefWidth="500.0">
+        <columns>
+          <TableColumn fx:id="titleColumn" prefWidth="145.0" text="Title">
+              <cellValueFactory>
+                  <PropertyValueFactory property="titleColumn" />
+              </cellValueFactory>
+          </TableColumn>
+          <TableColumn fx:id="authorColumn" minWidth="0.0" prefWidth="145.0" text="Author">
+              <cellValueFactory>
+                  <PropertyValueFactory property="authorColumn" />
+              </cellValueFactory>
+          </TableColumn>
+          <TableColumn fx:id="pagesColumn" minWidth="0.0" prefWidth="70.0" text="Pages">
+              <cellValueFactory>
+                  <PropertyValueFactory property="pagesColumn" />
+              </cellValueFactory>
+          </TableColumn>
+          <TableColumn fx:id="quantityColumn" minWidth="0.0" prefWidth="70.0" text="Quantity">
+              <cellValueFactory>
+                  <PropertyValueFactory property="quantityColumn" />
+              </cellValueFactory>
+          </TableColumn>
+          <TableColumn fx:id="priceColumn" minWidth="0.0" prefWidth="70.0" text="Price">
+              <cellValueFactory>
+                  <PropertyValueFactory property="priceColumn" />
+              </cellValueFactory>
+          </TableColumn>
+        </columns>
+      </TableView>
+        
+      
+      <Label alignment="CENTER" layoutX="520.0" layoutY="50.0" prefHeight="20.0" prefWidth="170.0" text="Title" />
+      <Label alignment="CENTER" layoutX="520.0" layoutY="105.0" prefHeight="20.0" prefWidth="170.0" text="Author" />
+      <Label alignment="CENTER" layoutX="520.0" layoutY="160.0" prefHeight="20.0" prefWidth="170.0" text="Pages" />
+      <Label alignment="CENTER" layoutX="520.0" layoutY="215.0" prefHeight="20.0" prefWidth="170.0" text="Quantity" />
+      <Label alignment="CENTER" layoutX="520.0" layoutY="270.0" prefHeight="20.0" prefWidth="170.0" text="Price" />
+      
+      <TextField fx:id="titleTextField" layoutX="520.0" layoutY="25.0" prefHeight="25.0" prefWidth="170.0" />
+      <TextField fx:id="authorTextField" layoutX="520.0" layoutY="80.0" prefHeight="25.0" prefWidth="170.0" />
+      <TextField fx:id="pagesTextField" layoutX="520.0" layoutY="135.0" prefHeight="25.0" prefWidth="170.0" />
+      <TextField fx:id="quantityTextField" layoutX="520.0" layoutY="190.0" prefHeight="25.0" prefWidth="170.0" />
+      <TextField fx:id="priceTextField" layoutX="520.0" layoutY="245.0" prefHeight="25.0" prefWidth="170.0" />
+      
+      
+      <Button layoutX="545.0" layoutY="300.0" mnemonicParsing="false" onAction="#addBookButtonAction" prefHeight="25.0" prefWidth="120.0" text="Add book" />
+      <Button layoutX="545.0" layoutY="335.0" mnemonicParsing="false" onAction="#deleteBookButtonAction" prefHeight="25.0" prefWidth="120.0" text="Delete book" />
+      
+      <Button layoutX="545.0" layoutY="380.0" mnemonicParsing="false" onAction="#openXMLButtonAction" prefHeight="25.0" prefWidth="120.0" text="Open XML" />
+            
+      <Label alignment="CENTER" layoutX="525.0" layoutY="425.0" prefHeight="20.0" prefWidth="95.0" text="Location:" />
+      <Button layoutX="610.0" layoutY="425.0" prefHeight="20.0" prefWidth="80.0" mnemonicParsing="false" onAction="#selectLocationButtonAction" text="Select" />
+      <Label fx:id="pathNewFile" alignment="CENTER" layoutX="520.0" layoutY="450.0" prefHeight="20.0" prefWidth="170.0" />
+      
+      <Label alignment="CENTER" layoutX="520.0" layoutY="505.0" prefHeight="20.0" prefWidth="170.0" text="File name:" />
+      <TextField fx:id="nameNewFile" layoutX="520.0" layoutY="480.0" prefHeight="25.0" prefWidth="170.0" />
+      <Button layoutX="555.0" layoutY="535.0" mnemonicParsing="false" onAction="#saveXMLButtonAction" prefHeight="25.0" prefWidth="100.0" text="Save XML" />
+      
+   </children>
+</AnchorPane>

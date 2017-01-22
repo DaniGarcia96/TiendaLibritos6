@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalog xmlns="http://www.eti.pg.gda.pl/kask/pt/catalog">
+    <book title="Jestem żoną szejka" author="Shukri Laila" pages="392" quantity="16" price="32.46"/>
+    <book title="Noc Kupały" author="Miszczuk Katarzyna" pages="412" quantity="11" price="31,49"/>
+    <book title="Pełnia życia" author="Maciąg Agnieszka" pages="652" quantity="11" price="44.49"/>
+    <book title="Dzielnica występku" author="Vargas Llosa Mario" pages="400" quantity="9" price="33.99"/>
+    <book title="ABC gotowania 2" author="Marecka Marieta" pages="199" quantity="6" price="58.99"/>
+    <book title="Cmętarz zwieżąt" author="King Stephen" pages="424" quantity="31" price="29.99"/>
+    <book title="Dziewczyna z pociągu" author="Hawkins Paula" pages="328" quantity="30" price="27.49"/>
+    <book title="Życie na pełnej petardzie" author="Kaczkowski Jan" pages="364" quantity="26" price="29.99"/>
+    <book title="Dom czwarty" author="Puzyńska Katarzyna" pages="212" quantity="12" price="31.99"/>
+    <book title="Konan Destylator" author="Pilipiuk Andrzej" pages="456" quantity="23" price="33.49"/>
+</catalog>
